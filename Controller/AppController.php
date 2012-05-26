@@ -33,7 +33,7 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
   public $helpers = array('Form', 'Html', 'Js', 'Session');
-  public $components = array('RequestHandler');
+  public $components = array('RequestHandler', 'GAPI.GAPI', 'Session');
   //public $autoRender = false;
 
   public function beforeScaffold($action) {
